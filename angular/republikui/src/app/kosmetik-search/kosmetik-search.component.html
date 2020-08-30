@@ -1,0 +1,29 @@
+<div class="box">
+  <label>
+    Busqueda:
+    <input type="text" [formControl]="search">
+  </label>
+
+  <div style="width:50px"></div>
+  <label>
+    modo:
+    <span class="button" [className]="mode == 'ING' ? 'button button_active' : 'button'"
+      (click)="setSearchMode('ING')">Ingrediente</span>
+    <span class="button" [className]="mode == 'PRO' ? 'button button_active' : 'button'"
+      (click)="setSearchMode('PRO')">Producto</span>
+    <span class="button" [className]="mode == 'ALL' ? 'button button_active' : 'button'"
+      (click)="setSearchMode('ALL')">Todo</span>
+  </label>
+</div>
+
+<div class="box">
+  <span *ngIf="results && results.length > 0" style="height:50px" class="box">resultados ...</span>
+</div>
+
+<div>
+  <div class="padding" *ngFor="let result of results">
+  <span style="padding:5px">{{result.nombre}}</span>
+  <span style="padding:5px">{{result.categoria}}</span>
+  <span style="padding:5px">{{result.comentario}}</span>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+- model: api.CategoriaIngrediente
+  pk: 1
+  fields:
+    value: Aceite
+- model: api.CategoriaIngrediente
+  pk: 2
+  fields:
+    value: Colorante
+- model: api.CategoriaIngrediente
+  pk: 3
+  fields:
+    value: Alcali
+- model: api.CategoriaIngrediente
+  pk: 4
+  fields:
+    value: Aroma
+- model: api.CategoriaIngrediente
+  pk: 5
+  fields:
+    value: PrincipioActivo
+- model: api.CategoriaIngrediente
+  pk: 6
+  fields:
+    value: AceiteEsencial
+- model: api.CategoriaIngrediente
+  pk: 7
+  fields:
+    value: Sinergia
+- model: api.CategoriaIngrediente
+  pk: 8
+  fields:
+    value: Producto
+- model: api.Tienda
+  pk: 1
+  fields:
+    value: Lola Shop
+- model: api.Tienda
+  pk: 2
+  fields:
+    value: Tio Pepe Shop
+- model: api.CategoriaCosmetica
+  pk: 1
+  fields:
+    value: Crema
+- model: api.CategoriaCosmetica
+  pk: 2
+  fields:
+    value: Gel
+- model: api.CategoriaCosmetica
+  pk: 3
+  fields:
+    value: Sinergia
+- model: api.CategoriaCosmetica
+  pk: 4
+  fields:
+    value: Serum
+- model: api.CategoriaCosmetica
+  pk: 5
+  fields:
+    value: Jabón
